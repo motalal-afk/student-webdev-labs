@@ -1,14 +1,22 @@
 /* Add your CSS code here  */
 
 :root {
+  --background-color: #f7f7f7;
+  --text-color: #121212;
   --ice-blue-juvie: #8fbcd4;
   --gothic-gray-blue: #6f8796;
   --dark-slate-infinity: #1f2a33;
+  --gray-border: #cccccc;
+  --table-emphasis-background: #ece7e7;
+  --table-background: #f4f4f4;
 }
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
 /* Nav styles */
@@ -18,12 +26,26 @@ body {
 
 .nav-link {
   color: var(--ice-blue-juvie);
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  font-weight: 500;
+  border-radius: 4px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: var(--ice-blue-juvie);
+  color: var(--dark-slate-infinity);
 }
 
 .nav-list {
   margin: 0;
+  padding: 1rem;
   list-style: none;
   padding-left: 0;
+  text-align: center;
 }
 
 .nav-item {
@@ -32,7 +54,16 @@ body {
 }
 
 /* Main area styles */
+.books-container {
+  max-width: 850px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0 1rem;
+}
+
 .main-heading {
+  text-align: center;
+  margin: 2rem 0;
   color: var(--gothic-gray-blue);
 }
 
@@ -40,13 +71,54 @@ body {
   font-family: "Cinzel";
 }
 
+/* Section styles */
+.section {
+  margin-top: 2rem;
+}
+
+.h2 {
+  border-bottom: 1px solid var(--gray-border);
+}
+
+/* Book list styles */
+.books-list li {
+  margin-bottom: 0.5rem;
+}
+
+.books-list li > ol {
+  margin-top: 0.4rem;
+}
+
+/* Image styles */
+.image-container {
+  text-align: center;
+}
+
+.book-image {
+  border-radius: 6px;
+}
+
 /* Table Styles */
-table {
-  border: 1px solid black;
+.table {
   border-collapse: collapse;
 }
-table td,
-table th {
-  padding: 6px;
-  border: 1px solid black;
+
+.table th,
+.table td {
+  border: 1px solid var(--gray-border);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.table tr:nth-child(even) {
+  background-color: var(--table-background);
+}
+
+.table-heading {
+  background-color: var(--table-emphasis-background);
+}
+
+.table-footer td {
+  font-weight: bold;
+  background-color: var(--table-emphasis-background);
 }

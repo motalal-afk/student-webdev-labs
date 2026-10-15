@@ -32,13 +32,13 @@
       </nav>
     </header>
 
-    <main>
+    <main class="books-container">
       <h1 class="main-heading font-cinzel">
         A Song of Ice and Fire - George R.R. Martin
       </h1>
-      <section id="books">
-        <h2 class="font-cinzel">A Song of Ice and Fire universe</h2>
-        <ul>
+      <section id="books" class="section">
+        <h2 class="h2 font-cinzel">ASOIAF Books</h2>
+        <ul class="books-list">
           <li>A song of Ice and Fire series:</li>
           <ol>
             <li>A Game of Thrones (1996)</li>
@@ -57,45 +57,50 @@
         </ul>
       </section>
 
-      <section id="covers">
-        <h2 class="font-cinzel">First Edition Covers</h2>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg"
-          alt="first edition cover of the book A Game of Thrones"
-          width="300"
-          height="400"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/3/39/AClashOfKings.jpg"
-          alt="first edition cover of the book A Clash of Kings"
-          width="300"
-          height="400"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/2/24/AStormOfSwords.jpg"
-          alt="first edition cover of the book A Storm of Swords"
-          width="300"
-          height="400"
-        />
+      <section id="covers" class="covers section">
+        <h2 class="h2 font-cinzel">First Edition Covers</h2>
+        <div class="image-container">
+          <img
+            class="book-image"
+            src="https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg"
+            alt="first edition cover of the book A Game of Thrones"
+            width="250"
+            height="400"
+          />
+          <img
+            class="book-image"
+            src="https://upload.wikimedia.org/wikipedia/en/3/39/AClashOfKings.jpg"
+            alt="first edition cover of the book A Clash of Kings"
+            width="250"
+            height="400"
+          />
+          <img
+            class="book-image"
+            src="https://upload.wikimedia.org/wikipedia/en/2/24/AStormOfSwords.jpg"
+            alt="first edition cover of the book A Storm of Swords"
+            width="250"
+            height="400"
+          />
+        </div>
       </section>
 
-      <section id="table">
-        <h2 class="font-cinzel">
+      <section id="table" class="section">
+        <h2 class="h2 font-cinzel">
           POV Character with the Most Chapters in Each Book
         </h2>
-        <table>
+        <table class="table">
           <thead>
             <tr>
-              <th rowspan="2">POV Character</th>
-              <th colspan="5">Books</th>
-              <th rowspan="2">Total Chapters</th>
+              <th class="table-heading" rowspan="2">POV Character</th>
+              <th class="table-heading" colspan="5">Books</th>
+              <th class="table-heading" rowspan="2">Total Chapters</th>
             </tr>
             <tr>
-              <th>A Game of Thrones</th>
-              <th>A Clash of Kings</th>
-              <th>A Storm of Swords</th>
-              <th>A Feast for Crows</th>
-              <th>A Dance with Dragons</th>
+              <th class="table-heading">A Game of Thrones</th>
+              <th class="table-heading">A Clash of Kings</th>
+              <th class="table-heading">A Storm of Swords</th>
+              <th class="table-heading">A Feast for Crows</th>
+              <th class="table-heading">A Dance with Dragons</th>
             </tr>
           </thead>
           <tbody>
@@ -140,12 +145,10 @@
               <td>42</td>
             </tr>
           </tbody>
-          <tfoot>
+          <tfoot class="table-footer">
             <tr>
-              <td colspan="6">
-                <strong>Total POV Chapters (Displayed)</strong>
-              </td>
-              <td><strong>147</strong></td>
+              <td colspan="6">Total POV Chapters (Displayed)</td>
+              <td>147</td>
             </tr>
           </tfoot>
         </table>
