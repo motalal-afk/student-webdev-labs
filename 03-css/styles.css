@@ -9,6 +9,9 @@
   --gray-border: #cccccc;
   --table-emphasis-background: #ece7e7;
   --table-background: #f4f4f4;
+  --form-background: #fefefe;
+  --midnight-blue: #161678;
+  --midnight-blue-dark: #0b0b4f;
 }
 
 body {
@@ -121,4 +124,35 @@ body {
 .table-footer td {
   font-weight: bold;
   background-color: var(--table-emphasis-background);
+}
+
+/* Form - IRA Roth Calculator */
+.form-container {
+  max-width: 420px;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 100px auto;
+  background-color: var(--form-background);
+}
+
+.ira-form {
+  padding: 0.5rem 1rem;
+}
+
+.color-bg-blue {
+  background-color: var(--midnight-blue-dark);
+}
+
+.main-heading-form {
+  text-align: center;
+  color: var(--midnight-blue);
+}
+
+.form-element {
+  margin-bottom: 0.5rem;
+}
+
+.form-label {
+  display: inline-block;
+  width: 50%;
 }
