@@ -1,1 +1,52 @@
 /* Add your CSS code here  */
+
+:root {
+  --ice-blue-juvie: #8fbcd4;
+  --gothic-gray-blue: #6f8796;
+  --dark-slate-infinity: #1f2a33;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Nav styles */
+.nav {
+  background-color: var(--dark-slate-infinity);
+}
+
+.nav-link {
+  color: var(--ice-blue-juvie);
+}
+
+.nav-list {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+/* Main area styles */
+.main-heading {
+  color: var(--gothic-gray-blue);
+}
+
+.font-cinzel {
+  font-family: "Cinzel";
+}
+
+/* Table Styles */
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 6px;
+  border: 1px solid black;
+}
