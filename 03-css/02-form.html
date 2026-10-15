@@ -13,58 +13,64 @@
         <h1 class="main-heading-form">Roth IRA Calculator</h1>
         <div class="form-element">
           <label class="form-label" for="balance">Balance ($)</label>
-
-          <input type="text" name="balance" id="balance" />
+          <input class="form-input" type="text" name="balance" id="balance" />
         </div>
 
         <div class="form-element">
           <label class="form-label" for="contribution"
             >Annual contribution (4)</label
           >
-
-          <input type="text" name="contribution" id="contribution" />
+          <input
+            class="form-input"
+            type="text"
+            name="contribution"
+            id="contribution"
+          />
         </div>
 
         <fieldset>
           <legend>Maximize contributions?</legend>
-          <input type="radio" name="Maximize" id="yes" />
-          <label class="form-label-radio" for="yes">Yes</label>
-          <input type="radio" name="Maximize" id="no" />
-          <label class="form-label-radio" for="no">No</label>
+          <div class="form-radios">
+            <input type="radio" name="Maximize" id="yes" />
+            <label for="yes">Yes</label>
+            <input type="radio" name="Maximize" id="no" />
+            <label for="no">No</label>
+          </div>
         </fieldset>
 
         <div class="form-element">
           <label class="form-label" for="rate"
             >Expected rate of return (5)</label
           >
-
-          <input type="number" name="rate" id="rate" />
+          <input class="form-input" type="number" name="rate" id="rate" />
         </div>
 
         <div class="form-element">
           <label class="form-label" for="Currage">Current age</label>
-
-          <input type="number" name="Currage" id="Currage" />
+          <input class="form-input" type="number" name="Currage" id="Currage" />
         </div>
 
         <div class="form-element">
           <label class="form-label" for="RetireAge">Retirement age</label>
-
-          <input type="number" name="RetireAge" id="RetireAge" />
+          <input
+            class="form-input"
+            type="number"
+            name="RetireAge"
+            id="RetireAge"
+          />
         </div>
 
         <div class="form-element">
           <label class="form-label" for="tax">Marginal tax rate (%)</label>
-
-          <input type="number" name="tax" id="tax" />
+          <input class="form-input" type="number" name="tax" id="tax" />
         </div>
 
         <div class="form-element">
-          <input type="submit" value="Calculate" />
-          <input type="reset" value="Reset" />
+          <input class="btn btn-submit" type="submit" value="Calculate" />
+          <input class="btn btn-reset" type="reset" value="Reset" />
         </div>
       </form>
-      <p>
+      <p class="form-note">
         This exercise is a simplified version of the Roth IRA Calculator at
         <a href="https://www.calculator.net/">Calculator.net</a>
       </p>
