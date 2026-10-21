@@ -142,7 +142,7 @@ h1 {
 }
 
 .grid-container .item4,
-.grid-container .item5{
+.grid-container .item5 {
   grid-column: span 2;
 }
 
@@ -155,3 +155,96 @@ h1 {
 }
 
 /* Exercise 04 - CSS Grid Areas */
+.header {
+  margin: 0 1rem;
+  border-radius: 6px;
+  grid-area: header;
+}
+
+.article {
+  margin: 0 1rem;
+  border-radius: 6px;
+  grid-area: article;
+}
+
+.aside {
+  margin: 0 1rem;
+  border-radius: 6px;
+  grid-area: aside;
+}
+
+.section {
+  margin: 0 1rem;
+  border-radius: 6px;
+  grid-area: section;
+}
+
+.footer {
+  margin: 0 1rem;
+  border-radius: 6px;
+  grid-area: footer;
+}
+
+.grid-area-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  gap: 0.5rem;
+  grid-template-areas:
+    "header"
+    "article"
+    "article"
+    "article"
+    "section"
+    "section"
+    "section"
+    "aside"
+    "footer";
+}
+
+@media (min-width: 415px) and (max-width: 768px) {
+  .article {
+    margin-right: 0;
+  }
+  .aside {
+    margin-left: 0;
+  }
+  .grid-area-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+      "header header"
+      "article aside"
+      "article aside"
+      "article aside"
+      "section section"
+      "section section"
+      "section section"
+      "footer footer";
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .aside {
+    margin-right: 0;
+  }
+  .article {
+    margin-left: 0;
+  }
+  .grid-area-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+      "header header header header header"
+      "aside aside article article article"
+      "aside aside article article article"
+      "aside aside article article article"
+      "aside aside article article article"
+      "section section section section section"
+      "section section section section section"
+      "section section section section section"
+      "footer footer footer footer footer";
+  }
+}
