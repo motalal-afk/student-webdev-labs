@@ -3,6 +3,7 @@
   --light-text-color: #fefefe;
   --lavender: #e6e6fa;
   --dark-background-color: #121212;
+  --hover-color: #32cd32;
 }
 
 body {
@@ -56,20 +57,52 @@ h1 {
 .bottom-of-page {
   background: var(--dark-background-color);
   color: white;
+  min-height: 100px;
+}
+
+.top-of-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
 .navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 
-.navigation a {
+.navigation .nav-link {
+  padding-bottom: 0.25rem;
   text-decoration: none;
+  color: var(--light-text-color);
+}
+
+.navigation .nav-link:hover {
+  border-bottom: 3px solid var(--hover-color);
+  color: var(--hover-color);
 }
 
 .main-area {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 1rem;
+  margin: 0.5rem;
+}
+
+.figure {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.figure img {
+  margin: 0 auto;
+}
+
+.figure figcaption {
+  margin-top: 1rem;
 }
 
 .page-area {
@@ -77,6 +110,12 @@ h1 {
   padding: 20px;
   border: 1px solid var(--dark-background-color);
   border-radius: 6px;
+}
+
+.bottom-of-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Exercise 03 - CSS Grid */
