@@ -1,13 +1,24 @@
 :root {
   --purple: #800080;
   --light-text-color: #fefefe;
+  --lavender: #e6e6fa;
+  --dark-background-color: #121212;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 /* Exercise 01 - Center */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--lavender);
+}
+
 .box {
   width: 200px;
   height: 100px;
@@ -16,6 +27,8 @@ body {
   color: var(--light-text-color);
   font-size: 1.75rem;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 h1 {
@@ -39,6 +52,32 @@ h1 {
 }
 
 /* Exercise 02 - Flexbox */
+.top-of-page,
+.bottom-of-page {
+  background: var(--dark-background-color);
+  color: white;
+}
+
+.navigation {
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.main-area {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.page-area {
+  max-width: 350px;
+  padding: 20px;
+  border: 1px solid var(--dark-background-color);
+  border-radius: 6px;
+}
 
 /* Exercise 03 - CSS Grid */
 
