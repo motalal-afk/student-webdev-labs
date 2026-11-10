@@ -106,9 +106,21 @@ console.log(searchPokemons("bug"));
 console.groupEnd();
 
 // Add your code here for: reducePokemons
+const reducePokemons = function () {
+  const result = pokemons.reduce((acc, pokemon) => {
+    pokemon.types.forEach((type) => {
+      if (acc[type]) acc[type]++;
+      else acc[type] = 1;
+    });
+
+    return acc;
+  }, {});
+
+  return result;
+};
 
 console.group("=========== reducePokemons =========== ");
-console.log(reducePokemons);
+console.log(reducePokemons());
 // {
 //   Grass: 3,
 //   Poison: 6,
