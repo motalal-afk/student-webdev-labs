@@ -9,6 +9,66 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--main-color);
   background-color: var(--bg-color);
+  margin: 0;
 }
 
 /* Add your code here */
+.header {
+  background-color: var(--pokemon-yellow);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pokemon-search {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.container {
+  padding: 1rem;
+  text-align: center;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.loading,
+.error-message {
+  color: var(--main-light-color);
+}
+
+.poke-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-card {
+  background-color: var(--main-light-color);
+  width: 300px;
+  text-align: center;
+  margin: 0.5rem;
+  padding: 1rem 0.5rem 2rem 0.5rem;
+}
+
+.pokemon-card:hover {
+  background-color: var(--pokemon-yellow);
+}
+
+.pokemon-type {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.display-none {
+  display: none;
+}
